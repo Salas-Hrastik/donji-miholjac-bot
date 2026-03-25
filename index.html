@@ -515,7 +515,7 @@ width:100%;
 <!-- HEADER -->
 <header>
   <img class="logo-img"
-    src="https://www.tz-donjimiholjac.hr/templates/tz_dm/images/logo.png"
+    src="/public/logo-tz.png"
     alt="TZ Donji Miholjac"
     onerror="this.style.display='none';document.getElementById('fallback-icon').style.display='flex'">
   <span id="fallback-icon" style="display:none;width:52px;height:52px;border-radius:12px;background:#c8a84b;align-items:center;justify-content:center;font-size:26px;flex-shrink:0">🌿</span>
@@ -588,6 +588,12 @@ let currentWeather = null; // globalni weather kontekst za AI
 // ===== FORMAT REPLY (markdown → HTML, konzistentni font) =====
 function formatReply(text){
   return text
+    // Telefonski brojevi → klikabilni tel: linkovi
+    .replace(/(\+?385[\s\-]?\d{2}[\s\-]?\d{3}[\s\-]?\d{3,4}|\+?385[\s\-]?\d{2}[\s\-]?\d{6,7}|0\d{2}[\s\-]?\d{3}[\s\-]?\d{3,4})/g, function(match) {
+      const clean = match.replace(/[\s\-]/g, '');
+      const normalized = clean.startsWith('0') ? '+385' + clean.slice(1) : clean;
+      return `<a href="tel:${normalized}">${match}</a>`;
+    })
     // Headings → styled div (ne h3 koji mijenja font!)
     .replace(/^### (.+)$/gm,'<div style="font-family:inherit;font-weight:bold;font-size:13.5px;color:#3a1e0d;margin:10px 0 3px;border-bottom:1px solid #e8e8e8;padding-bottom:2px">$1</div>')
     .replace(/^## (.+)$/gm,'<div style="font-family:inherit;font-weight:bold;font-size:14.5px;color:#3a1e0d;margin:12px 0 4px;border-bottom:1px solid #e8e8e8;padding-bottom:2px">$1</div>')
