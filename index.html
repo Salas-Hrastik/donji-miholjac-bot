@@ -18,7 +18,7 @@
 body{
 margin:0;
 font-family:Arial, Helvetica, sans-serif;
-background:#1a4a2e;
+background:#5c3a1e;
 color:#222;
 height:100vh;
 display:flex;
@@ -28,7 +28,7 @@ overflow:hidden;
 
 /* ===== HEADER ===== */
 header{
-background:#142d38;
+background:#3a1e0d;
 color:white;
 padding:10px 24px;
 display:flex;
@@ -74,7 +74,7 @@ gap:6px;
 
 /* ===== CATEGORY TABS — persistent bar ===== */
 #cat-tabs{
-background:#1e5c38;
+background:#6b4423;
 padding:8px 16px;
 display:flex;
 gap:6px;
@@ -102,7 +102,7 @@ flex-shrink:0;
 #cat-tabs button:hover,
 #cat-tabs button.active{
 background:#c8a84b;
-color:#142d38;
+color:#3a1e0d;
 border-color:#c8a84b;
 font-weight:bold;
 }
@@ -298,7 +298,7 @@ padding:12px 22px;
 border-radius:10px;
 font-weight:bold;
 cursor:pointer;
-color:#142d38;
+color:#3a1e0d;
 font-size:15px;
 transition:background 0.2s;
 white-space:nowrap;
@@ -389,7 +389,7 @@ flex:1;
 
 .item-card-info strong{
 font-size:13px;
-color:#142d38;
+color:#3a1e0d;
 white-space:nowrap;
 overflow:hidden;
 text-overflow:ellipsis;
@@ -457,7 +457,7 @@ box-shadow:0 20px 60px rgba(0,0,0,0.4);
 }
 
 .modal-bar{
-background:#142d38;
+background:#3a1e0d;
 color:white;
 padding:10px 16px;
 display:flex;
@@ -586,9 +586,9 @@ let currentWeather = null; // globalni weather kontekst za AI
 function formatReply(text){
   return text
     // Headings → styled div (ne h3 koji mijenja font!)
-    .replace(/^### (.+)$/gm,'<div style="font-family:inherit;font-weight:bold;font-size:13.5px;color:#142d38;margin:10px 0 3px;border-bottom:1px solid #e8e8e8;padding-bottom:2px">$1</div>')
-    .replace(/^## (.+)$/gm,'<div style="font-family:inherit;font-weight:bold;font-size:14.5px;color:#142d38;margin:12px 0 4px;border-bottom:1px solid #e8e8e8;padding-bottom:2px">$1</div>')
-    .replace(/^# (.+)$/gm,'<div style="font-family:inherit;font-weight:bold;font-size:15px;color:#142d38;margin:12px 0 4px">$1</div>')
+    .replace(/^### (.+)$/gm,'<div style="font-family:inherit;font-weight:bold;font-size:13.5px;color:#3a1e0d;margin:10px 0 3px;border-bottom:1px solid #e8e8e8;padding-bottom:2px">$1</div>')
+    .replace(/^## (.+)$/gm,'<div style="font-family:inherit;font-weight:bold;font-size:14.5px;color:#3a1e0d;margin:12px 0 4px;border-bottom:1px solid #e8e8e8;padding-bottom:2px">$1</div>')
+    .replace(/^# (.+)$/gm,'<div style="font-family:inherit;font-weight:bold;font-size:15px;color:#3a1e0d;margin:12px 0 4px">$1</div>')
     .replace(/\n/g,"<br>")
     .replace(/\*\*(.*?)\*\*/g,"<strong>$1</strong>")
     .replace(/\*(.*?)\*/g,"<em>$1</em>")
