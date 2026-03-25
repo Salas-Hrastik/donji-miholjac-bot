@@ -174,7 +174,7 @@ export const db = {
     "opis": "Baranjsko-slavonska kuhinja Donjeg Miholjca temelji se na bogatim tradicijama uz rijeku Dravu. Riblji specijaliteti, divljač, domaće kobasice i odlična vina odlikuju ovu gastronomiju.",
     "jela": [
       {
-        "naziv": "Šaran na dravaški način",
+        "naziv": "Šaran na dravski način",
         "opis": "Svježi dravski šaran pripreman u paprikašu ili na roštilju. Jedna od najautentičnijih jela Donjeg Miholjca — šaran iz Drave poznat je po izuzetnom okusu zahvaljujući čistoj dravskoj vodi."
       },
       {
@@ -182,7 +182,7 @@ export const db = {
         "opis": "Gusti riblji paprikaš od dravskog šarana, soma ili štuke, začinjen slavonskom crvenom paprikom. Priprema se u kotliću na otvorenoj vatri — pravo kulinarsko iskustvo."
       },
       {
-        "naziv": "Baranjska kobasica",
+        "naziv": "Slavonska kobasica i kulen",
         "opis": "Tradicijska domaća kobasica prema baranjskom receptu — od svinjskog mesa, paprike i mirodija. Sušena i dimljena, bogata okusom."
       },
       {

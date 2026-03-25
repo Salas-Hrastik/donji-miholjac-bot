@@ -505,7 +505,7 @@ export default async function handler(req, res) {
           'ℹ️ Donji Miholjac **nije vinorodno područje** — vinogradi se nalaze u središnjoj Baranji (Beli Manastir, Kneževi Vinogradi, Zmajevac), oko 40 km sjeverno.\n\n' +
           '🗺️ Za baranjska vina i vinograde:\n' +
           '🌐 [tzbaranje.hr](https://www.tzbaranje.hr)\n\n' +
-          'U Donjem Miholjcu uživajte u **dravskim specijalitetima** — šaran na dravaški način, sarma i domaća rakija!\n' +
+          'U Donjem Miholjcu uživajte u **dravskim specijalitetima** — šaran na dravski način, sarma i domaća rakija!\n' +
           '📞 [+385 31 631 300](tel:+38531631300) | [tz-donjimiholjac.hr](https://www.tz-donjimiholjac.hr)';
       }
 
@@ -570,7 +570,7 @@ export default async function handler(req, res) {
           '🎁 Suveniri i lokalni proizvodi iz Donjeg Miholjca:\n\n' +
           '🍯 **Med s Miholjačkog pčelinjaka** — Višecvjetni, bagremov, livadni med\n' +
           '🎀 **Licitar** — Tradicijsko medičarstvo (Jadranka Rušanac — obrt Ban)\n' +
-          '🥩 **Baranjska kobasica** — Sušena, dimljena, tradicijskim receptom\n' +
+          '🥩 **Slavonska kobasica i kulen** — Sušena, dimljena, tradicijskim receptom\n' +
           '🦌 **Lovački suveniri** — Rogovi, trofejni predmeti\n\n' +
           '🏢 Turistička zajednica Donji Miholjac:\n' +
           '📍 Trg Ante Starčevića 2\n' +
@@ -727,7 +727,7 @@ Pravila:
 3. Dravske šume, lovni turizam i ribolov su KLJUČNI identiteti grada — uvijek ih istakni kada je relevantno
 3a. VAŽNO: Donji Miholjac NIJE vinorodno područje — ne spominji vinarije, vinograde ni graševinu kao lokalne atrakcije. Ako korisnik pita za vino, uputi ga u Baranju (Beli Manastir, ~40 km)
 4. Prandau festival (svibanj–listopad) je najvažnija kulturna manifestacija
-5. Šaran na dravaški način, sarma i baranjska kobasica su kulinarski specijaliteti
+5. Šaran na dravski način, sarma i slavonska kobasica i kulen su kulinarski specijaliteti
 6. UVOD — OBAVEZNO za preporuke i konverzacijska pitanja:
    - NIKAD ne počinji odgovor odmah s listom — uvijek napiši 2-3 rečenice toplog uvoda
    - Uvod mora sadržavati: kontekst sezone/vremena + kratku napomenu o raspoloženju grada + najavu što slijedi
