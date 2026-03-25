@@ -406,36 +406,61 @@ export const db = {
     "opis": "Donji Miholjac odlično je polazište za izlete po Baranji, Slavoniji i prekograničnoj Mađarskoj.",
     "izleti": [
       {
-        "naziv": "Osijek",
-        "udaljenost": "45 km",
-        "opis": "Metropola Slavonije s impresivnom Tvrđom (barokni grad-tvrđava, UNESCO kandidatura), Zoološkim vrtom, šetnicom uz Dravu i bogatom kulturnom scenom. Obavezan izlet!"
+        "naziv": "Valpovo",
+        "udaljenost": "18 km",
+        "opis": "Najbliži grad — poznat po dvorcu Normann-Prandau, jednom od najljepših baroknih dvoraca u Slavoniji. Šetnja uz Dravu i centar starog grada.",
+        "web_tz": "https://www.tz-valpovo.hr",
+        "web_naziv": "TZ Valpovo"
+      },
+      {
+        "naziv": "Bizovac — Bizovačke toplice",
+        "udaljenost": "22 km",
+        "opis": "Poznato topličko lječilište s termalnim vodama temperature do 96°C. Aquapark, wellness, spa i medicinska rehabilitacija. Idealno za obiteljski izlet ili opuštanje.",
+        "web_tz": "https://www.bizovacke-toplice.hr",
+        "web_naziv": "Bizovačke toplice"
+      },
+      {
+        "naziv": "Našice",
+        "udaljenost": "25 km",
+        "opis": "Grad s bogatom plemićkom prošlošću i parkovima. Dvorac Pejačević u Našicama jedan je od najljepših slavonskih dvoraca.",
+        "web_tz": "https://www.tz-nasice.hr",
+        "web_naziv": "TZ Našice"
       },
       {
         "naziv": "Đakovo",
         "udaljenost": "35 km",
-        "opis": "Grad Strossmayerove katedrale i lipicančkih konja. Impozantna neogotička katedrala sv. Petra apostola i Ergela lipicančkih konja — dva razloga za posjet."
+        "opis": "Grad Strossmayerove katedrale i lipicančkih konja. Impozantna neogotička katedrala sv. Petra apostola i Ergela lipicančkih konja.",
+        "web_tz": "https://www.tz-dakovo.hr",
+        "web_naziv": "TZ Đakovo"
       },
       {
         "naziv": "Beli Manastir",
         "udaljenost": "40 km",
-        "opis": "Središte Baranje — malog zemlja između Drave i Dunava. Specifična baranjska kultura, vino i tradicija. Grad s bogatim etnografskim nasljeđem."
+        "opis": "Središte Baranje — kraj između Drave i Dunava. Specifična baranjska kultura, gastronomija i tradicija. Grad s bogatim etnografskim nasljeđem.",
+        "web_tz": "https://www.tzbaranje.hr",
+        "web_naziv": "TZ Baranje"
       },
       {
-        "naziv": "Kopački rit — Nacionalni park",
+        "naziv": "Osijek",
+        "udaljenost": "45 km",
+        "opis": "Metropola Slavonije s impresivnom Tvrđom (barokni grad-tvrđava), Zoološkim vrtom, šetnicom uz Dravu i bogatom kulturnom scenom. Obavezan izlet!",
+        "web_tz": "https://www.tzosijek.hr",
+        "web_naziv": "TZ Osijek"
+      },
+      {
+        "naziv": "Kopački rit — Park prirode",
         "udaljenost": "55 km",
-        "opis": "Jedan od najvećih europskih močvarnih ekosustava — UNESCO biosferna rezerva. Dom jelena, divljih svinja i preko 300 vrsta ptica. Promatranje ptica, čamcem kroz rita — nezaboravno iskustvo."
+        "opis": "Jedan od najvećih europskih močvarnih ekosustava — UNESCO biosferna rezerva. Dom jelena, divljih svinja i preko 300 vrsta ptica. Promatranje ptica i vožnja čamcem.",
+        "web_tz": "https://www.kopacki-rit.com",
+        "web_naziv": "Park prirode Kopački rit"
       },
       {
         "naziv": "Pécs (Mađarska)",
         "udaljenost": "60 km",
-        "opis": "Mađarski grad s bogatom kulturnom i arhitektonskom baštinom — UNESCO Stara jezgra, Nacionalno kazalište, razni muzeji. Lako dostupan iz Donjeg Miholjca."
-      },
-      {
-        "naziv": "Nasice",
-        "udaljenost": "25 km",
-        "opis": "Grad s bogatom plemićkom prošlošću i parkovima. Dvorac Pejačević u Našicama jedan je od najljepših slavonskih dvoraca."
-      },
-
+        "opis": "Mađarski grad s bogatom kulturnom i arhitektonskom baštinom — UNESCO Stara jezgra, Nacionalno kazalište, razni muzeji. Lako dostupan iz Donjeg Miholjca.",
+        "web_tz": "https://pecs.info",
+        "web_naziv": "Pécs turizam"
+      }
     ]
   }
 };

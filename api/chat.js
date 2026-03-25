@@ -381,7 +381,7 @@ function getRelevantContext(message, db, lastCategory) {
     || msg.includes('wandern') || msg.includes('radfahren') || msg.includes('natur') || msg.includes('fluss') || msg.includes('wald'))
     return { context: CATEGORY_CONTEXTS.priroda(db), category: 'priroda' };
 
-  if (msg.includes('izlet') || msg.includes('okolica') || msg.includes('blizin') || msg.includes('osijek') || msg.includes('đakovo') || msg.includes('dakovo') || msg.includes('beli manastir') || msg.includes('kopački') || msg.includes('kopacki') || msg.includes('pécs') || msg.includes('pecs') || msg.includes('nasice') || msg.includes('našice')
+  if (msg.includes('izlet') || msg.includes('okolica') || msg.includes('blizin') || msg.includes('osijek') || msg.includes('đakovo') || msg.includes('dakovo') || msg.includes('beli manastir') || msg.includes('kopački') || msg.includes('kopacki') || msg.includes('pécs') || msg.includes('pecs') || msg.includes('nasice') || msg.includes('našice') || msg.includes('valpovo') || msg.includes('bizovac') || msg.includes('toplice') || msg.includes('bizovačke')
     || msg.includes('trip') || msg.includes('excursion') || msg.includes('nearby') || msg.includes('surroundings') || msg.includes('day trip')
     || msg.includes('ausflug') || msg.includes('umgebung') || msg.includes('in der nähe'))
     return { context: CATEGORY_CONTEXTS.okolica(db), category: 'okolica' };
@@ -658,7 +658,7 @@ export default async function handler(req, res) {
         znamenitosti: ['Dvorac Prandau — info?', 'Stara Drava — gdje?', 'Sakralna baština?', 'Prandau festival — kada?', 'Besplatno razgledavanje?', 'Vođene ture?'],
         priroda:      ['Biciklistička staza uz Dravu?', 'Gdje ići ribolovom?', 'Stara Drava — piknik?', 'Dravske šume — lov?', 'Baranjski vinogradi — gdje?', 'Lov u okolici?'],
         sport:        ['Ribolovna udruga Udica?', 'Teniski tereni?', 'Trim staza — gdje?', 'Fitness centri?', 'Cikloturizam rute?'],
-        okolica:      ['Kako do Osijeka?', 'Kopački rit — izlet?', 'Pécs — Mađarska?', 'Beli Manastir?', 'Đakovo — što posjetiti?', 'Nasice dvorac?'],
+        okolica:      ['Valpovo — dvorac?', 'Bizovačke toplice?', 'Kopački rit — izlet?', 'Osijek — što vidjeti?', 'Đakovo — katedrala?', 'Pécs — Mađarska?'],
         vinarije:     ['Koje sorte vina?', 'Kušanje graševine?', 'Barba berba — kada?', 'Vinograd obilazak?', 'Vinska cesta Baranja?'],
         lov:          ['Lov na jelena?', 'Divlja svinja sezona?', 'Kako organizirati lov?', 'Ribolov na Dravi?', 'Lovački smještaj?'],
       };
@@ -728,6 +728,7 @@ Pravila:
 3a. VAŽNO: Donji Miholjac NIJE vinorodno područje — ne spominji vinarije, vinograde ni graševinu kao lokalne atrakcije. Ako korisnik pita za vino, uputi ga u Baranju (Beli Manastir, ~40 km)
 4. Prandau festival (svibanj–listopad) je najvažnija kulturna manifestacija
 5. Šaran na dravski način, sarma i slavonska kobasica i kulen su kulinarski specijaliteti
+5a. Za izlete u okolicu UVIJEK navedi web link TZ ili web odredišta kao markdown link — otvara se u skočnom prozoru. Format: [naziv TZ](url). Svako odredište ima web_tz i web_naziv u bazi.
 6. UVOD — OBAVEZNO za preporuke i konverzacijska pitanja:
    - NIKAD ne počinji odgovor odmah s listom — uvijek napiši 2-3 rečenice toplog uvoda
    - Uvod mora sadržavati: kontekst sezone/vremena + kratku napomenu o raspoloženju grada + najavu što slijedi
