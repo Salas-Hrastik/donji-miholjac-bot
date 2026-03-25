@@ -1,0 +1,37 @@
+{
+    "version": 2,
+    "functions": {
+        "api/**/*.js": {
+            "maxDuration": 45,
+            "memory": 1024
+        }
+    },
+    "routes": [
+        {
+            "src": "/",
+            "headers": {
+                "Cache-Control": "no-cache, no-store, must-revalidate, max-age=0",
+                "Pragma": "no-cache",
+                "Surrogate-Control": "no-store"
+            },
+            "dest": "/index.html"
+        }
+    ],
+    "headers": [
+        {
+            "source": "/",
+            "headers": [
+                { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate, max-age=0" },
+                { "key": "Pragma", "value": "no-cache" },
+                { "key": "Surrogate-Control", "value": "no-store" }
+            ]
+        },
+        {
+            "source": "/(.*)\\.html",
+            "headers": [
+                { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate, max-age=0" },
+                { "key": "Pragma", "value": "no-cache" }
+            ]
+        }
+    ]
+}

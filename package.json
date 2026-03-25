@@ -1,0 +1,8 @@
+{
+    "name": "donji-miholjac-bot",
+    "version": "1.0.0",
+    "type": "module",
+    "engines": { "node": "20.x" },
+    "scripts": { "scrape": "node scripts/scrape-dm.js" },
+    "dependencies": { "openai": "^4.77.0" }
+}
