@@ -499,17 +499,14 @@ export default async function handler(req, res) {
           '📞 Više info: +385 31 631 300 | [tz-donjimiholjac.hr](https://www.tz-donjimiholjac.hr)';
       }
 
-      // 3. VINARIJE / BARANJSKA GRAŠEVINA
-      if (!faqReply && (ml.includes('vino') || ml.includes('vinar') || ml.includes('graševin') || ml.includes('grasevin') || ml.includes('vinograd') || ml.includes('baranjsk') && (ml.includes('vino') || ml.includes('graš')))) {
+      // 3. VINO / VINOGRAD — uputi na Baranju jer DM nije vinorodno područje
+      if (!faqReply && (ml.includes('vino') || ml.includes('vinar') || ml.includes('graševin') || ml.includes('grasevin') || ml.includes('vinograd'))) {
         faqReply =
-          '🍷 **Baranjska vina — Donji Miholjac i okolica**\n\n' +
-          'Donji Miholjac i Baranja poznati su po uzgoju vinove loze i vrhunskim bijelim vinima!\n\n' +
-          '🍇 **Baranjska graševina** — Zaštićena oznaka, zlatna, svježa, voćna aroma. Idealna uz ribu!\n' +
-          '🍾 **Baranjski rizling** — Suho bijelo vino s finom mineralnošću\n' +
-          '🌾 **Sezona berbe** — Rujan/listopad — posjetite vinograde za berbu grožđa!\n\n' +
-          '📅 **Prandau festival** (svibanj–listopad) uključuje vinska događanja\n\n' +
-          '📞 Za posjet vinarijama i kušanje vina:\n' +
-          'info@tz-donjimiholjac.hr | [tz-donjimiholjac.hr](https://www.tz-donjimiholjac.hr)';
+          'ℹ️ Donji Miholjac **nije vinorodno područje** — vinogradi se nalaze u središnjoj Baranji (Beli Manastir, Kneževi Vinogradi, Zmajevac), oko 40 km sjeverno.\n\n' +
+          '🗺️ Za baranjska vina i vinograde:\n' +
+          '🌐 [tzbaranje.hr](https://www.tzbaranje.hr)\n\n' +
+          'U Donjem Miholjcu uživajte u **dravskim specijalitetima** — šaran na dravaški način, sarma i domaća rakija!\n' +
+          '📞 [+385 31 631 300](tel:+38531631300) | [tz-donjimiholjac.hr](https://www.tz-donjimiholjac.hr)';
       }
 
       // 4. LOV
@@ -543,9 +540,8 @@ export default async function handler(req, res) {
         faqReply =
           '👨‍👩‍👧 Donji Miholjac s djecom i obitelju:\n\n' +
           '🌊 **Stara Drava** — Šetnice uz vodu, piknik mjesta, ribolov\n' +
-          '🚴 **Biciklizam** — Ravninske staze kroz vinograde i šume — savršeno za obitelj!\n' +
+          '🚴 **Biciklizam** — Ravninske staze uz Dravu i kroz šume — savršeno za obitelj!\n' +
           '🌲 **Dravske šume** — Promatranje prirode i divljači\n' +
-          '🍷 **Baranjski vinograd** (za starije) — Izlet u obližnje vinograde\n' +
           '🎭 **Prandau festival** (svibanj–listopad) — Klasična glazba u dvorcu\n' +
           '🏰 **Stari i Novi dvorac** — Povijesni obilazak s djecom\n\n' +
           '📞 Za više info: +385 31 631 300';
@@ -561,8 +557,7 @@ export default async function handler(req, res) {
           '✅ Centar — crkva i kavana s baranjskom kafom\n\n' +
           '☀️ **Cijeli dan (6–8 sati):**\n' +
           '✅ Sve gore + ručak s dravskim šaranom u sarmijadi\n' +
-          '✅ Biciklom kroz vinograde ili Dravske šume\n' +
-          '✅ Kušanje Baranjske graševine\n\n' +
+          '✅ Biciklom uz Dravu ili kroz Dravske šume\n' +
           '🏕️ **Vikend u Donjem Miholjcu:**\n' +
           '✅ Sve gore + Kopački rit (55 km) — nezaboravno promatranje ptica\n' +
           '✅ Osijek (45 km) — metropola Slavonije\n\n' +
@@ -573,7 +568,6 @@ export default async function handler(req, res) {
       if (!faqReply && (ml.includes('suvenir') || ml.includes('souvenir') || ml.includes('poklon') || ml.includes('gift') || ml.includes('lokalni proizvod') || ml.includes('suvenirnic'))) {
         faqReply =
           '🎁 Suveniri i lokalni proizvodi iz Donjeg Miholjca:\n\n' +
-          '🍷 **Baranjska graševina** — Bijelo vino iz baranjskih vinograda, savršen dar!\n' +
           '🍯 **Med s Miholjačkog pčelinjaka** — Višecvjetni, bagremov, livadni med\n' +
           '🎀 **Licitar** — Tradicijsko medičarstvo (Jadranka Rušanac — obrt Ban)\n' +
           '🥩 **Baranjska kobasica** — Sušena, dimljena, tradicijskim receptom\n' +
@@ -591,7 +585,7 @@ export default async function handler(req, res) {
           '📅 **Jesen** — godišnje natjecanje\n' +
           '📍 Donji Miholjac\n\n' +
           '🍃 Sudionici se natječu tko će skuhati najukusniju sarmu po tradicijskom receptu\n' +
-          '🍷 Uz dobru baranjsku graševinu i veselu glazbu\n\n' +
+          '🎵 Uz veselu glazbu i dobro raspoloženje\n\n' +
           '📞 Informacije: +385 31 631 300 | [tz-donjimiholjac.hr](https://www.tz-donjimiholjac.hr)';
       }
 
@@ -636,11 +630,11 @@ export default async function handler(req, res) {
         `📞 [+385 31 631 300](tel:+38531631300)\n` +
         `✉️ info@tz-donjimiholjac.hr\n` +
         `🌐 [tz-donjimiholjac.hr](https://www.tz-donjimiholjac.hr)\n\n` +
-        `🌿 Grad poznat po **Baranjskoj graševini**, **Dravskim šumama**, lovnom turizmu i Prandau festivalu — festival orguljaške glazbe koji se održava od svibnja do listopada.`;
+        `🌿 Grad poznat po **Dravskim šumama**, lovnom turizmu, ribolovu i Prandau festivalu — festival orguljaške glazbe koji se održava od svibnja do listopada.`;
       return res.status(200).json({
         reply,
         category: 'opcenito',
-        suggestions: ['🏰 Što vidjeti?', '🍽️ Gdje ručati?', '🍷 Baranjska vina?'],
+        suggestions: ['🏰 Što vidjeti?', '🍽️ Gdje ručati?', '🦌 Lov i ribolov?'],
         items: [],
         images: []
       });
@@ -710,7 +704,7 @@ export default async function handler(req, res) {
       });
     }
 
-    const systemPrompt = `Ti si stručni turistički asistent za grad Donji Miholjac (Hrvatska). Pomažeš posjetiteljima pronaći informacije o znamenitostima, gastronomiji, smještaju, događanjima, vinarijama, lovu i svemu što Donji Miholjac nudi.
+    const systemPrompt = `Ti si stručni turistički asistent za grad Donji Miholjac (Hrvatska). Pomažeš posjetiteljima pronaći informacije o znamenitostima, gastronomiji, smještaju, događanjima, lovu, ribolovu i svemu što Donji Miholjac nudi.
 ${weatherCtx}
 
 VAŽNO — SEZONSKI I VREMENSKI KONTEKST:
@@ -730,18 +724,19 @@ ${scrapedSection}
 Pravila:
 1. Odgovaraj samo na pitanja vezana uz Donji Miholjac i turizam u regiji
 2. Ne izmišljaj informacije — ako nešto ne znaš, uputi na TZ (+385 31 631 300)
-3. Baranjska graševina i Dravske šume su KLJUČNI identiteti grada — uvijek ih istakni kada je relevantno
+3. Dravske šume, lovni turizam i ribolov su KLJUČNI identiteti grada — uvijek ih istakni kada je relevantno
+3a. VAŽNO: Donji Miholjac NIJE vinorodno područje — ne spominji vinarije, vinograde ni graševinu kao lokalne atrakcije. Ako korisnik pita za vino, uputi ga u Baranju (Beli Manastir, ~40 km)
 4. Prandau festival (svibanj–listopad) je najvažnija kulturna manifestacija
 5. Šaran na dravaški način, sarma i baranjska kobasica su kulinarski specijaliteti
 6. UVOD — OBAVEZNO za preporuke i konverzacijska pitanja:
    - NIKAD ne počinji odgovor odmah s listom — uvijek napiši 2-3 rečenice toplog uvoda
    - Uvod mora sadržavati: kontekst sezone/vremena + kratku napomenu o raspoloženju grada + najavu što slijedi
-   - Primjer dobrog uvoda: "Odličan izbor! Donji Miholjac u travnju odiše proljetnim mirisima baranjskih vinograda — idealno je vrijeme za obilazak. S trenutnom temperaturom od 15°C, preporučujem..."
+   - Primjer dobrog uvoda: "Odličan izbor! Donji Miholjac u travnju odiše proljetnim mirisima Dravskih šuma — idealno je vrijeme za obilazak. S trenutnom temperaturom od 15°C, preporučujem..."
    - LOŠ uvod (zabranjen): odmah početi s emoji listanjem bez ikakvog konteksta
 7. FORMATIRANJE — OBAVEZNO:
    - NIKAD ne koristi ### ili ## za naslove — umjesto toga koristi **Naslov** (bold)
    - NIKAD ne koristi crtice (- stavka) za listanje — uvijek koristi EMOJI ikonu ispred svake stavke
-   - Svaka stavka u listi počinje kontekstualnom ikonom: 🏰 dvorac, 🌊 Drava, 🍷 vino, 🦌 lov, 🎣 ribolov, 🌲 priroda, 🚴 biciklizam, 🎭 kultura, 🍽️ restoran, 🏨 smještaj, 📍 lokacija, 📞 telefon, 🌐 web, 🗺️ izlet, ⛪ crkva, 🎻 glazba, 🌾 vinograd itd.
+   - Svaka stavka u listi počinje kontekstualnom ikonom: 🏰 dvorac, 🌊 Drava, 🦌 lov, 🎣 ribolov, 🌲 priroda, 🚴 biciklizam, 🎭 kultura, 🍽️ restoran, 🏨 smještaj, 📍 lokacija, 📞 telefon, 🌐 web, 🗺️ izlet, ⛪ crkva, 🎻 glazba itd.
    - Nikad ne ponavljaj istu ikonu uzastopno u listi
 8. Na APSOLUTNOM KRAJU odgovora, u zadnjem retku, dodaj TOČNO ovako (bez ikakvog prefiksa, zagrade ili dvotočke ispred, uvijek na HRVATSKOM jeziku):
 SUGGESTIONS:["Pitanje 1 na hrvatskom?","Pitanje 2 na hrvatskom?","Pitanje 3 na hrvatskom?"]`;

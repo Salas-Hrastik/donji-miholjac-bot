@@ -1,7 +1,7 @@
 export const db = {
   "grad": {
     "naziv": "Donji Miholjac",
-    "opis": "Donji Miholjac je grad u Osječko-baranjskoj županiji, smješten uz rijeku Dravu na rubu Baranje. Poznat je po bogatim vinogradima, Baranjskoj graševini, lovnom turizmu, Dravskoj šumi i autentičnoj slavonsko-baranjskoj gastronomiji. Grad nudi prirodne ljepote Drave i mirnu atmosferu ravničarskog kraja.",
+    "opis": "Donji Miholjac je grad u Osječko-baranjskoj županiji, smješten uz rijeku Dravu na rubu Baranje. Poznat je po lovnom turizmu, ribolovu, Dravskoj šumi, Prandau festivalu i autentičnoj slavonsko-baranjskoj gastronomiji. Grad nudi prirodne ljepote Drave i mirnu atmosferu ravničarskog kraja.",
     "adresa_tz": "Trg Ante Starčevića 2, 31540 Donji Miholjac",
     "telefon": "+385 31 631 300",
     "email": "info@tz-donjimiholjac.hr",
@@ -48,9 +48,8 @@ export const db = {
       }
     ],
     "gospodarstvo": {
-      "opis": "Donji Miholjac je agricolturno i industrijsko središte. Vinegardarstvo, lovni turizam i ribolov važne su gospodarske grane, uz prerađivačku industriju i naftu iz Beničanaca.",
+      "opis": "Donji Miholjac je agrarno i industrijsko središte. Lovni turizam i ribolov važne su gospodarske grane, uz prerađivačku industriju i naftu iz Beničanaca.",
       "kljucne_grane": [
-        "Vinogradarstvo i vinarstvo (Baranjska graševina)",
         "Lovni turizam (Miholjačke Podunavske šume)",
         "Ribolov na Dravi",
         "Eksploatacija nafte i plina (Beničanci)",
@@ -81,7 +80,6 @@ export const db = {
     "zanimljivosti": [
       "Donji Miholjac je jedan od najstarijih kontinuirano naseljenih gradova u Slavoniji i Baranji.",
       "Prandau festival — festival orguljaške i komorne glazbe — jedinstven je kulturni događaj u regiji.",
-      "Baranjska graševina iz okolice Donjeg Miholjca jedna je od najcjenjenijih bijelih vina u Hrvatskoj.",
       "Dravske šume kraj Donjeg Miholjca stanište su jelena, divljih svinja i raznih vrsta ptica — raj za lovce i promatrače prirode.",
       "Stara Drava — bivše korito rijeke Drave — najpopularnije je rekreacijsko područje za stanovnike i posjetitelje.",
       "Sarmijada je natjecanje u kuhanju sarme koje svake godine privlači ljubitelje tradicijske kuhinje.",
@@ -194,10 +192,6 @@ export const db = {
       {
         "naziv": "Divljač iz Dravskih šuma",
         "opis": "Meso jelena, divlje svinje i srne iz Miholjačkih Podunavskih šuma. Priprema se na razne načine — gulaš, pečenje, roštilj. Specijalitet koji ne možete naći nigdje drugdje."
-      },
-      {
-        "naziv": "Baranjska graševina",
-        "opis": "Vrhunsko bijelo vino iz vinograda oko Donjeg Miholjca. Graševina je baranjska kraljica vina — svježa, voćna, sa zlatnom bojom. Idealan pratilac ribljim i mesnim specijalitetima."
       },
       {
         "naziv": "Med s Miholjačkog pčelinjaka",
@@ -359,13 +353,13 @@ export const db = {
       },
       {
         "naziv": "Cikloturizam",
-        "opis": "Donji Miholjac ima razvijenu mrežu biciklističkih staza kroz ravničarski kraj uz Dravu. Idealno za rekreativno bicikliranje kroz vinograde, šume i sela.",
+        "opis": "Donji Miholjac ima razvijenu mrežu biciklističkih staza kroz ravničarski kraj uz Dravu. Idealno za rekreativno bicikliranje kroz šume i sela.",
         "karta": "https://www.google.com/maps/search/?api=1&query=Cycling+Donji+Miholjac"
       }
     ]
   },
   "priroda": {
-    "opis": "Donji Miholjac smješten je uz rijeku Dravu, okružen Baranjskim vinogradima, nizinskim šumama i bogatim prirodnim područjima.",
+    "opis": "Donji Miholjac smješten je uz rijeku Dravu, okružen nizinskim šumama, dravskim rukavcima i bogatim prirodnim područjima.",
     "lokacije": [
       {
         "naziv": "Stara Drava",
@@ -387,34 +381,12 @@ export const db = {
         "karta": "https://www.google.com/maps/search/?api=1&query=Dravska+suma+Donji+Miholjac"
       },
       {
-        "naziv": "Baranjski vinogradi",
-        "opis": "Vinogradska područja uz Donji Miholjac poznata po Baranjskoj graševini. Uređene vinske staze kroz vinograde — savršen izlet u svako godišnje doba.",
-        "tip": "Vinograd / vinska staza",
-        "karta": "https://www.google.com/maps/search/?api=1&query=Vinogradi+Donji+Miholjac"
-      },
-      {
         "naziv": "Biciklistička staza uz Dravu",
-        "opis": "Ravninska biciklistička staza uz rijeku Dravu — dio mreže cikloturizma Osječko-baranjske županije. Prolazi kroz šume, vinograde i sela.",
+        "opis": "Ravninska biciklistička staza uz rijeku Dravu — dio mreže cikloturizma Osječko-baranjske županije. Prolazi kroz šume i sela.",
         "tip": "Biciklizam",
         "karta": "https://www.google.com/maps/search/?api=1&query=Bike+route+Drava+Donji+Miholjac"
       }
     ]
-  },
-  "vinarije": {
-    "opis": "Donji Miholjac i Baranja poznati su po uzgoju vinove loze i proizvodnji bijelih vina, posebno graševine.",
-    "vina": [
-      {
-        "naziv": "Baranjska graševina",
-        "opis": "Zaštićena oznaka zemljopisnog podrijetla (ZOZP). Graševina iz baranjskih vinograda uz Donji Miholjac — zlatna, svježa, voćna aroma. Idealna uz ribu i bijelo meso.",
-        "tip": "Bijelo vino"
-      },
-      {
-        "naziv": "Baranjski rizling",
-        "opis": "Bijelo suho vino iz baranjskih vinograda. Fina mineralnost i svježina karakteristična za dravski kraj.",
-        "tip": "Bijelo vino"
-      }
-    ],
-    "napomena": "Za posjet vinarijama i kupnju vina kontaktirajte TZ Donji Miholjac: info@tz-donjimiholjac.hr ili posjetite: https://www.tz-donjimiholjac.hr"
   },
   "lov_ribolov": {
     "opis": "Donji Miholjac je jedno od najvažnijih lovnih i ribolovnih odredišta u Slavoniji i Baranji.",
@@ -463,11 +435,7 @@ export const db = {
         "udaljenost": "25 km",
         "opis": "Grad s bogatom plemićkom prošlošću i parkovima. Dvorac Pejačević u Našicama jedan je od najljepših slavonskih dvoraca."
       },
-      {
-        "naziv": "Baranjski vinogradi i vinska cesta",
-        "udaljenost": "10–30 km",
-        "opis": "Biciklima ili autom kroz baranjske vinograde — posjet vinarijama, kušanje graševine i lokalnih vina. Posebno preporučljivo u rujnu za berbu grožđa."
-      }
+
     ]
   }
 };
